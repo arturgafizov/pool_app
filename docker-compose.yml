@@ -14,7 +14,7 @@ services:
       - redis_socket:/redis_socket
       - postgres_socket:/postgres_socket
     ports:
-      - 8000:8000
+      - 8080:8000
     environment:
       <<: *variables
     env_file:
