@@ -19,8 +19,8 @@ ALLOWED_HOSTS: list = os.environ.get("DJANGO_ALLOWED_HOSTS").split(",")
 
 AUTH_USER_MODEL = 'main.User'
 
-SUPERUSER_EMAIL = os.environ.get('SUPERUSER_EMAIL', 'test@test.com')
-SUPERUSER_PASSWORD = os.environ.get('SUPERUSER_PASSWORD', 'tester26')
+SUPERUSER_EMAIL = os.environ.get('SUPERUSER_EMAIL', 'django@pool.com')
+SUPERUSER_PASSWORD = os.environ.get('SUPERUSER_PASSWORD', '123456')
 
 MICROSERVICE_TITLE = os.environ.get('MICROSERVICE_TITLE', 'Template')
 MICROSERVICE_PREFIX = os.environ.get('MICROSERVICE_PREFIX', '')
@@ -66,7 +66,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     'main.apps.MainConfig',
-
+    'polls',
+    'questionnaires',
 ]
 
 INSTALLED_APPS += THIRD_PARTY_APPS + LOCAL_APPS
