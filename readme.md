@@ -1,40 +1,8 @@
-![GitHub](https://img.shields.io/github/license/bandirom/DjangoTemplateWithDocker?style=plastic)
-![Codecov](https://img.shields.io/codecov/c/gh/bandirom/DjangoTemplateWithDocker?style=plastic)
-
-# Django template in docker with docker-compose
-
-### Features of the template:
-
-#### Project features:
-* Docker/Docker-compose environment
-* Environment variables
-* Separated settings for Dev and Prod django version
-* Docker configuration for nginx for 80 and/or 443 ports (dev/stage/prod) (Let's Encrypt certbot)
-* Celery worker
-* Redis service for caching using socket. Also message broker for queue
-* RabbitMQ configuration
-* Debug mode (PyCharm Professional)
-* ASGI support
-* Flake8 integration
-* Swagger in Django Admin Panel
-* Ready for deploy by one click
-* Separated configuration for dev and prod (requirements and settings)
-* GitHub Actions
-* Redefined default User model (main.models.py)
-* MailHog, Jaeger, RabbitMQ integrations
-* Multi-stage build for prod versions
-* PostgreSql Backup
-
-### How to use:
-
-#### Clone the repo:
-
-    git clone https://github.com/bandirom/DjangoTemplateWithDocker.git ./project_name
-    
+   
 
 #### Before running add your superuser email/password and project name in docker/prod/env/.data.env file
 
-    SUPERUSER_EMAIL=example@email.com
+    SUPERUSER_EMAIL=django@pool.com
     SUPERUSER_PASSWORD=secretp@ssword
     MICROSERVICE_TITLE=MyProject
 
